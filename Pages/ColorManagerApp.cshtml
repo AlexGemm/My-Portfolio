@@ -1,0 +1,56 @@
+﻿@page
+@model Portfolio.Pages.ColorManagerAppModel
+@{
+}
+<div>
+    <div class="d-flex flex-column align-items-center float-right">
+
+        <div class=" d-flex flex-row">
+
+            <div class="border border-light image m-2">
+                <img class="image__img" src="~/gifs/Example_Two.gif" alt="gif image" />
+                <div class="image__overlay">
+                    <p class="image__description m-1">
+                        The user types the color Red into the input bar and hits a button that changes the color of the box view and
+                        the hexcode of the text view to match the named color. This is done by searching through an array of strings in an XML file
+                        for matching names.
+                    </p>
+                </div>
+            </div>
+
+            <div class="border border-light image m-2">
+                <img class="image__img" src="~/gifs/Example_One.gif" alt="gif image" />
+                <div class="image__overlay">
+                    <p class="image__description m-1">
+                        The user types a valid hexcode and the view changes it's background color to the one in the input bar.
+                        They then press a button to save it as a string in the shared preferences of the app.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border border-light image m-2">
+            <img class="image__img" src="~/gifs/Example_Three.gif" alt="gif image" />
+            <div class="image__overlay">
+                <p class="image__description m-1">
+                    There is a seperate activity accessed by the app bar which displays a set of
+                    strings stored in the shared preference file of the app. The user can then delete the string from the set and resave the set.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <h2>Color Manager App</h2>
+    <p class="mb-3">
+        <u>Coding Language(s)</u>: Java, XML<br />
+        <u>Technology Used</u>: Android Studio
+    </p>
+    <p class="w-50 mb-3">
+        <u>Description</u>: The Color Manager App's goal was to allow users to find and organize colors they might use for digital design in one simple to use app.
+        Users can search for possible hexcodes to use by either searching for a specific code or by searching for a color name (i.e., Dark Red) both ways display
+        the color in a preview. Then the user can save the color code and see their saved colors in a seperate activity as well as delete colors they no longer want saved.
+    </p>
+    <p>Hover over the gifs on the right to see more details about whats displayed.</p>
+</div>

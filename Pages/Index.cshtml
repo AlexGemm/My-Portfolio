@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<div class="text-center">
+
+    <div class="mb-5">
+
+        <h1 class="display-4">Alex Gemmell</h1>
+        <p class="lead">This is a portfolio of different projects I have created or participated in.</p>
+        <p class="lead">The website itself was created using the .Net framework in Visual Studio 2019.</p>
+
+    </div>
+
+    <div class="d-flex justify-content-center">
+        <img class="image-display border border-white mr-2" src="~/images/myprofilepicture.jpg" alt="photo image" />
+        <div class="align-items-end flex-column w-50">
+            <p>
+                I am a honors graduate with a bachelors for computer science from Fitchburg State University and a concentration in
+                game programming. The "About Me" page goes into more detail and provides links to my resume.
+            </p>
+            <a asp-page="/AboutMe">
+                <input class="btn btn-info m-2 mt-auto" type="button" value="About Me" />
+            </a>
+        </div>
+    </div>
+
+</div>
