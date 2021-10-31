@@ -1,6 +1,8 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+@import url("https://www.w3schools.com/howto/tryit.asp?font=Quicksand");
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
@@ -63,6 +65,10 @@ body {
     margin-bottom: 60px;
     background-color: #23012c;
     color: white;
+    font-family: 'Quicksand';
+}
+p {
+    line-height: 1.6;
 }
 .footer {
   position: absolute;
@@ -104,11 +110,6 @@ body {
 .image__description {
     text-align: center;
     font-size: 10px;
-}
-
-.image-display {
-    width: 260px;
-    height: auto;
 }
 
 .gif-display {

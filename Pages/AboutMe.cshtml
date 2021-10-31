@@ -2,13 +2,20 @@
 @model Portfolio.Pages.AboutMeModel
 @{
 }
-<div class="d-flex justify-content-center mt-5">
-    <img class="image-display border border-white mr-3" src="~/images/myprofilepicture.jpg" alt="photo image" />
-    <div class="align-items-end flex-column w-75">
-        <p class="mb-4">
-            Hello, my name is Alexander Gemmell and I am a recent graduate from Fitchburg State University. I have also worked both as a
-            peer tutor on CS related courses and in retail for around two years. My main area of interest is in software development of which I am highly passionate about.
-        </p>
-        <a class="border border-light rounded p-2 mt-auto" href="~/downloadables/Alexander-Gemmell-Resume.pdf" download>My Resume</a>
+<hr />
+<div class="row w-75">
+    <img class="border border-white mr-2" style="width: 260px; height: auto;" src="~/images/myprofilepicture.jpg" alt="photo image" />
+    <div class="col ml-3">
+        <div class="row">
+            <p class="mb-3">
+                Hello, my name is Alexander Gemmell and I am a recent graduate from Fitchburg State University looking to utilize my skills from my academic years. I have also worked both as a
+                peer tutor on computer science related courses and in retail for around two years. I have strong skills in areas such as object-oriented programming and webdesign as well as database
+                management. If you wish to look at my resume simply click to document button below, if you want to see the code behind some of my projects click on the github button.
+            </p>
+        </div>
+        <div class="row">
+            <a class="btn btn-info rounded border border-white mr-3" href="~/downloadables/AlexGemmellResume.docx" download><img src="~/images/resumeicon.png" alt="resume image" /></a>
+            <a class="btn btn-info rounded border border-white" href="https://github.com/AlexGemm"><img src="~/images/githubicon.png" alt="github image" /></a>
+        </div>
     </div>
 </div>

@@ -3,27 +3,27 @@
 @{
     ViewData["Title"] = "Home page";
 }
-<div class="text-center">
-
-    <div class="mb-5">
-
-        <h1 class="display-4">Alex Gemmell</h1>
-        <p class="lead">This is a portfolio of different projects I have created or participated in.</p>
-        <p class="lead">The website itself was created using the .Net framework in Visual Studio 2019.</p>
-
+<hr />
+<div class="row">
+    <div class="w-50 mb-5 p-3 border border-white rounded">
+        <h1>Welcome</h1>
+        <p class="mb-3">
+            This is my own personalized and entirly self made portfolio website. Many of my various projects are included in this website along with
+            more information about myself and relevent links to things such as my github, resume, and methods of contact. The header bar on the website
+            can be used for navigating these different subjects.
+        </p>
+        <p>The website itself was created using the ASP.Net framework in Visual Studio 2019.</p>
     </div>
-
-    <div class="d-flex justify-content-center">
-        <img class="image-display border border-white mr-2" src="~/images/myprofilepicture.jpg" alt="photo image" />
-        <div class="align-items-end flex-column w-50">
-            <p>
-                I am a honors graduate with a bachelors for computer science from Fitchburg State University and a concentration in
-                game programming. The "About Me" page goes into more detail and provides links to my resume.
-            </p>
-            <a asp-page="/AboutMe">
-                <input class="btn btn-info m-2 mt-auto" type="button" value="About Me" />
-            </a>
-        </div>
+</div>
+<div class="row w-75">
+    <img class="border border-white mr-2" style="width: 260px; height: auto;" src="~/images/myprofilepicture.jpg" alt="photo image" />
+    <div class="col">
+        <p class="mb-3">
+            My name is <b>Alexander Gemmell</b>, I am a honors graduate with a bachelors in computer science from Fitchburg State University and a concentration in
+            game programming. My passion is with programming and I'm looking for work in software developement, web design, and/or game programming
+            so if you're interested you can contact me using the link in the navigation bar above.
+            The "About Me" page goes into more detail and provides links to my resume.
+        </p>
+        <a asp-page="/AboutMe" class="btn btn-info border border-white"><b>About Me</b></a>
     </div>
-
 </div>
