@@ -1,0 +1,50 @@
+﻿@page
+@model Portfolio.Pages.TabletopManagerModel
+@{
+}
+
+<div class="row">
+	<div class="col-7">
+		<h2>Tabletop Manager</h2>
+		<p class="mb-3">
+			<b>Coding Language(s):</b> C#, Javascript, HTML/CSS<br />
+			<b>Technology Used:</b> ASP.Net, Jquery
+		</p>
+		<p class="mb-3">
+			<b>Description:</b> This is a personal project developed by myself in ASP.Net using the MVC template. It is a website made so users can store data they
+			might use for their tabletop game as well as keep track of some information during their games. Although it is not deployed the code for the website can be
+			found on github.
+		</p>
+		<div class="mb-3">
+			<b>Features:</b>
+			<ul>
+				<li>User can save data to a database.</li>
+				<li>User can view, edit, and delete data they saved in a list.</li>
+				<li>User can search for specific items of a list.</li>
+				<li>One user can't view another users data.</li>
+				<li>User can track information during the game using the encounter manager.</li>
+			</ul>
+		</div>
+		<div>
+			<a class="btn btn-info rounded border border-white mr-1" href="https://github.com/AlexGemm/ASP.Net-Tabletop-Manager-Website"><img src="~/images/githubicon.png" alt="github image" /></a>
+		</div>
+		<div class="mt-3">
+			<b>Code Snippit:</b>
+			<ul>
+				<li>
+					In the controller for the items related pages the user gives all the data on the item they want to store in the database. In the background though
+					there is another part the user does not see, that is that the website stores what user created which item so it can show the user only the information
+					they themselves stored and not someone elses items.
+				</li>
+			</ul>
+			<img style="width:70%; height:70%;" class="border border-white rounded" src="~/images/Code_Snip_ASP.jpg" alt="code image" />
+		</div>
+	</div>
+	<div class="col-5">
+		<img class="m-2 border border-white" src="~/gifs/Example_One_ASP.gif" alt="gif image" />
+		<img class="m-2 border border-white" src="~/gifs/Example_Two_ASP.gif" alt="gif image" />
+		<img class="m-2 border border-white" src="~/gifs/Example_Three_ASP.gif" alt="gif image" />
+		<img class="m-2 border border-white" src="~/gifs/Example_Four_ASP.gif" alt="gif image" />
+		<img class="m-2 border border-white" src="~/images/Database.JPG" alt="database image" />
+	</div>
+</div>

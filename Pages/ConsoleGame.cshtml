@@ -1,0 +1,44 @@
+﻿@page
+@model Portfolio.Pages.ConsoleGameModel
+@{
+}
+
+<div class="row">
+	<div class="col-7">
+		<h2>Console Game</h2>
+		<p class="mb-3">
+			<b>Coding Language(s):</b> C#<br />
+			<b>Technology Used:</b> Visual Studio
+		</p>
+		<p class="mb-3">
+			<b>Description:</b> This is a personal project developed by myself using the .Net console application template utilizing basic C#. it is a simple
+			text based and randomized adventure game where you enter a room and defeat the enemies there. This project is new and I will be updating it however
+			as of now the game is a loop of rooms, once one set of enemies is defeated it creates another room with a new set.
+		</p>
+		<div class="mb-3">
+			<b>Features:</b>
+			<ul>
+				<li>User inputs a string to the game, the game responds depending on what the user typed.</li>
+				<li>Enemies are randomized.</li>
+				<li>There is a constant gameplay loop.</li>
+			</ul>
+		</div>
+		<div>
+			<a class="btn btn-info rounded border border-white mr-1" href="https://github.com/AlexGemm/Console-Game"><img src="~/images/githubicon.png" alt="github image" /></a>
+		</div>
+		<div class="mt-3">
+			<b>Code Snippit:</b>
+			<ul>
+				<li>
+					For combat, once the user types attack it subtracts the damage dealt from the enemy health of the first enemy.
+					It then goes through each enemy in the room, clearing the enemy from the list if it is dead or having the enemy attack the player.
+				</li>
+			</ul>
+			<img style="width:70%; height:70%;" class="border border-white rounded" src="~/images/Code_Snip_Console.jpg" alt="code image" />
+		</div>
+	</div>
+	<div class="col-5">
+		<img class="m-2 border border-white" src="~/gifs/Example_One_Console.gif" alt="gif image" />
+		<img class="m-2 border border-white" src="~/gifs/Example_Two_Console.gif" alt="gif image" />
+	</div>
+</div>

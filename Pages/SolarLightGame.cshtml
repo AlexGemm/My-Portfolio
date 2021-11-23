@@ -2,6 +2,54 @@
 @model Portfolio.Pages.SolarLightGameModel
 @{
 }
+
+<div class="row">
+	<div class="col-8">
+		<h2>Solar Light</h2>
+		<p class="mb-3">
+			<b>Coding Language(s):</b> C#<br />
+			<b>Technology Used:</b> Unity Engine, Photoshop
+		</p>
+		<p class="mb-3">
+			<b>Description:</b> The Solar Light Game was an academic project developed by myself for a
+			game design course. It is a 2d multi-leveled space shooter where the player goes through fighting various different
+			kinds of enemies in a level to advance. I developed both the code behind the game as well as the art, music, and animations.
+			The game itself can be played in the browser on the itch.io page.
+		</p>
+		<div class="mb-3">
+			<b>Features:</b>
+			<ul>
+				<li>Player can move and fire projectiles throughout the levels.</li>
+				<li>Player health gets tracked, when it hits zero the player must restart the level.</li>
+				<li>Each level has different stages where enemies have different fireing patterns and speeds.</li>
+				<li>When a player passes a level it is saved so the player wont have to do it again (as long as the game is not closed).</li>
+			</ul>
+		</div>
+		<div>
+			<a class="btn btn-info rounded border border-white mr-1" href="https://github.com/AlexGemm/Solar-Light"><img src="~/images/githubicon.png" alt="github image" /></a>
+			<a class="btn btn-info rounded border border-white" href="https://alexgem.itch.io/solar-light"><img src="~/images/itchlogo.png" alt="github image" /></a>
+		</div>
+		<div class="mt-3">
+			<b>Code Snippit:</b>
+			<ul>
+				<li>
+					In the Game Manager script the gameplay loop works by first checking if any enemies are still present, then if there isn't any it
+					enters a switch statement checking an integer variable called stage. Depeding on the stage the specific stats of the enemy
+					are changed and more instances of the enemy are created, once that's done the stage variable is incremented for the next time the switch
+					statement is entered.
+				</li>
+			</ul>
+			<img style="width:70%; height:70%;" class="border border-white rounded" src="~/images/Code_Snip_Unity.jpg" alt="code image" />
+		</div>
+	</div>
+	<div class="col-4">
+		<img style="width: auto; height: 212px;" class="m-2 border border-white" src="~/gifs/Unity_One.gif" alt="gif image" />
+		<img style="width: auto; height: 212px;" class="m-2 border border-white" src="~/gifs/Unity_Two.gif" alt="gif image" />
+		<img style="width: auto; height: 212px;" class="m-2 border border-white" src="~/gifs/Unity_Three.gif" alt="gif image" />
+	</div>
+</div>
+
+<!--
 <div>
     <div class="float-right align-items-end">
         <div>
@@ -20,9 +68,10 @@
         <u>Technology Used</u>: Unity Engine, Photoshop
     </p>
     <p class="w-50 mb-3">
-        <u>Description</u>: Solar Light is a multi-leveled space shooter where the player controls a spaceship and is fighting different enemy alien ships throughout a level.
+        <u>Description</u>: Solar Lightis an academic project  is a multi-leveled space shooter where the player controls a spaceship and is fighting different enemy alien ships throughout a level.
         The goal is to defeat all the enemies of the level by firing at them and avoiding their shots while also avoiding asteroids that spawn to the left and right. The player can
         navigate levels using a level selection screen.
     </p>
     <p><u>Link to itch page</u>: <a href="https://alexgem.itch.io/solar-light">Solar Light</a></p>
 </div>
+-->
