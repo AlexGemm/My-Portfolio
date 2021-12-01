@@ -1,0 +1,49 @@
+﻿@page
+@model Portfolio.Pages.Index1Model
+@{
+}
+
+<div class="row">
+	<div class="col-7">
+		<h2>Dice Roller</h2>
+		<p class="mb-3">
+			<b>Coding Language(s):</b> Visual Basic<br />
+			<b>Technology Used:</b> Winforms
+		</p>
+		<p class="mb-3">
+			<b>Description:</b> The dice roller application is a personal project I created myself. It is a simple application to allow a user
+			to roll dice on their computer without the need for physical dice. There is a downloadable version of the dice roller on my github,
+			simply click on the button below.
+		</p>
+		<div class="mb-3">
+			<b>Features:</b>
+			<ul>
+				<li>User can click buttons to get random numbers within different limits.</li>
+				<li>User can choose to roll multiple dice in a dice pool.</li>
+				<li>User can add a solid modifier to the roll result.</li>
+			</ul>
+		</div>
+		<div>
+			<a class="btn btn-info rounded border border-white mr-1" href="https://github.com/AlexGemm/Dice-Roller"><img src="~/images/githubicon.png" alt="github image" /></a>
+		</div>
+		<div class="mt-3">
+			<b>Code Snippit:</b>
+			<ul>
+				<li>
+					The reference dicePool is to the button that sets the mode to multiple rolls or a single roll. Once clicked the if statements within the on click
+					functions of the other dice roll buttons switch to add their roll values to the current value rather than replace it. CalcLabel is referencing the
+					text and shows the results of the dice rolls to the user.
+				</li>
+			</ul>
+			<img style="width:70%; height:70%;" class="border border-white rounded" src="~/images/Code_Snip_Winform.jpg" alt="code image" />
+		</div>
+	</div>
+	<div class="col-5">
+		<label>Roll different types of dice.</label>
+		<img class="m-2 border border-white" src="~/gifs/Winform_One.gif" alt="gif image" />
+		<label>Roll multiple dice, adding the results.</label>
+		<img class="m-2 border border-white" src="~/gifs/Winform_Two.gif" alt="gif image" />
+		<label>Add or subtract from the rolls.</label>
+		<img class="m-2 border border-white" src="~/gifs/Winform_Three.gif" alt="gif image" />
+	</div>
+</div>
